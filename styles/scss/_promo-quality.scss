@@ -1,0 +1,110 @@
+@import "_circle-gradient-mixine";
+
+.promo-quality {
+  background-color: $backgroundColorBeigeChiaro;
+
+  &__wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 52px 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+  &__square {
+    width: 468px;
+    background-color: $backgroundColorBeige;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__tiny-background {
+    position: absolute;
+    right: -11%;
+    top: -27%;
+  }
+  &__ellipse-tiny {
+    @include circle-gradient(365px, #d4b098);
+    transform: rotate(130deg);
+    z-index: 1;
+  }
+  &__big-background {
+    position: absolute;
+    right: -38%;
+    top: -3%;
+  }
+  &__ellipse-big {
+    @include circle-gradient(745px, #d4b098);
+    transform: rotate(120deg);
+    z-index: 1;
+  }
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 222px 0 177px;
+  }
+  &__img {
+    width: 521px;
+    height: 414px;
+    object-fit: cover;
+    margin: 0 20px 0 0;
+    z-index: 2;
+  }
+  &__title {
+    font-family: "Playfair Display";
+    font-size: 32px;
+    color: $textColorGrey;
+    margin: 88px 0 38px;
+    position: relative;
+    z-index: 2;
+  }
+  &__desc {
+    max-width: 376px;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 24px;
+    color: $textColorGreyChiaroDarker;
+    margin: 0 0 45px;
+    position: relative;
+    z-index: 2;
+  }
+  &__btn {
+    width: 205px;
+    min-height: 64px;
+    background: #d4b098;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  &__switcher {
+    margin: 22px 0 21px 552px;
+  }
+  &__switcher-left {
+    width: 7px;
+    height: 7px;
+    border-top: 0.5px solid $textColorGrey !important;
+    border-right: 0.51px solid $textColorGrey !important;
+    transform: rotate(-135deg);
+    display: inline-block;
+    transition: 1s;
+    background-color: transparent;
+  }
+  &__switcher-count {
+    margin: 0 15px;
+  }
+  &__switcher-right {
+    width: 7px;
+    height: 7px;
+    border-top: 0.5px solid $textColorGrey !important;
+    border-right: 0.5px solid $textColorGrey !important;
+    transform: rotate(45deg);
+    display: inline-block;
+    transition: 1s;
+    background-color: transparent;
+  }
+}

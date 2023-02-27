@@ -1,0 +1,48 @@
+.footer {
+  background-color: $backgroundColorGray;
+  &__wrapper {
+    max-width: 1366px;
+    margin: 0 218px 0 176px;
+    padding: 67px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    background-image: url(../../src/images/logo-light.svg);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    max-width: 130px;
+    min-height: 34px;
+    width: 100%;
+  }
+  &__phone {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.75;
+    margin: 26px 0 15px;
+  }
+  &__email {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.75;
+  }
+  &__nav-title {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0 28px;
+  }
+  &__nav-links li {
+    margin: 15px 0 0;
+  }
+  &__nav-link {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.75;
+  }
+}

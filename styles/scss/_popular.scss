@@ -1,0 +1,83 @@
+@import "_circle-gradient-mixine";
+
+.popular {
+  z-index: 2;
+  background-color: $backgroundColorWhite;
+  position: relative;
+  &__wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 125px;
+  }
+  &__title {
+    margin: 0;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    text-align: center;
+  }
+  &__btn {
+    background-color: transparent;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    color: $textColorGreyChiaroDarker;
+    float: right;
+    margin-right: 98px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c4c0b6;
+    cursor: pointer;
+  }
+  &__items {
+    display: flex;
+    margin: 92px 98px 0;
+    justify-content: space-between;
+  }
+  &__item-title {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 14px;
+    color: $textColorGrey;
+    margin: 0 0 10px 20px;
+  }
+  &__item-price {
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 12px;
+    color: $textColorGrey;
+    opacity: 0.8;
+    margin: 0 0 0 20px;
+  }
+  &__item-img {
+    width: 313px;
+    height: 313px;
+    object-fit: cover;
+    margin: 0 0 20px;
+  }
+  &__ellipse-background {
+    position: absolute;
+    top: 35%;
+  }
+  &__ellipse {
+    @include circle-gradient(310px, #e2d0c4);
+  }
+  &__line-container {
+    position: relative;
+  }
+  &__line {
+    width: 30px;
+    border: 1px solid #8b8371;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+  }
+  &__detail-link {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 16px;
+    color: $textColorGrey;
+    margin-left: 86px;
+  }
+}

@@ -1,0 +1,119 @@
+.promo-collection {
+  background-color: $backgroundColorBeigeChiaro;
+  position: relative;
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  &__ellipse {
+    z-index: 1;
+    position: absolute;
+    top: -12%;
+    left: 34%;
+    width: 496px;
+    height: 945px;
+    background: linear-gradient(
+      180deg,
+      rgba(234, 227, 212, 0) 0%,
+      #eae3d4 100%
+    );
+    mix-blend-mode: normal;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  }
+  &__line-container {
+    position: relative;
+    &_type_text {
+      max-width: 343px;
+      width: 100%;
+      text-align: end;
+      margin: 0 0 16px;
+    }
+    &_type_price {
+      max-width: 80px;
+      width: 100%;
+      text-align: start;
+      height: 16px;
+      margin: 138px 0 0;
+    }
+    &_type_diametr {
+      max-width: 122px;
+      width: 100%;
+      text-align: end;
+      height: 16px;
+      margin: 636px 0 0;
+    }
+  }
+
+  &__line {
+    width: 50px;
+    border: 1px solid #8b8371;
+    display: inline-block;
+    position: absolute;
+    &_type_text {
+      top: 50%;
+      left: -20%;
+    }
+    &_type_price {
+      top: 30%;
+      right: -70%;
+    }
+    &_type_diametr {
+      top: 30%;
+      left: -50%;
+    }
+  }
+  &__text-container {
+    margin: 238px 58px 0 180px;
+  }
+  &__title {
+    display: inline;
+    color: $textColorGrey;
+    font-family: "Playfair Display";
+    font-size: 45px;
+  }
+  &__price {
+    display: inline;
+    color: $textColorGrey;
+    font-family: "Prata";
+    font-size: 16px;
+  }
+  &__diametr {
+    display: inline;
+    color: $textColorGrey;
+    font-family: "Prata";
+    font-size: 16px;
+  }
+  &__img {
+    display: block;
+    width: 500px;
+    height: 750px;
+    object-fit: cover;
+  }
+  &__subtitle {
+    color: $textColorGrey;
+    font-family: "Playfair Display";
+    font-size: 30px;
+  }
+  &__descr {
+    max-width: 264px;
+    color: $textColorGrey;
+    opacity: 0.8;
+    font-family: "Roboto";
+    font-size: 14px;
+    margin: 39px 0 64px;
+  }
+  &__button {
+    width: 205px;
+    min-height: 64px;
+    background: $textColorGreyChiaroDarker;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
